@@ -1,6 +1,11 @@
 1. Inštalacia django do python
     pip install django
     pip list
+1.1 toto je na git a spustenie mojho priecinku
+
+    git config --global user.name "Lukas Padysak"
+    cd my_site
+
 
 2. Vytvorenie djando projektu-
     django-admin startproject nazov_projektu .
@@ -53,3 +58,15 @@ urlpatterns = [
    
     path('' ,views.index,name='index'),
 ]
+
+9.Template 
+9.1 
+-Vytvorit v priecinku aplikacie priecinok templates/nazov_aplikacie
+-V tomto priecinku vytvorit html subor (napr. index.html)
+9.2 Upravit views tak aby pouzival template
+
+    from django.shortcuts import render
+
+    def index(request):
+        return render(request, 'kalkulacka/index.html')
+
