@@ -68,5 +68,20 @@ urlpatterns = [
     from django.shortcuts import render
 
     def index(request):
-        return render(request, 'kalkulacka/index.html')
+        sucet = 10+5
+        apar = "Cislo a je parne"
+        return render(request, 'kalkulacka/index.html', {"sucet":sucet, "apar":apar})
 
+10. css , obrazky 
+- vytvorit v  priecinku aplikacie priecinok static/nazov_aplikacie
+-  v tomto priecinku vytvorit css (napr. kalkulacka.css)
+-do tohto priecinku nakompirovat obrazky
+- do template (index.html) doplnit :
+    -uplne na zaciatok {% load static %}
+    - do hlavicky odkaz na style
+    <head>
+        <link rel="stylesheet" href="%static 'kalkulacka/kalkulacka.css'%">
+    </head>
+10.1 
+-vlozenie obrazku dam si ho do static/kalkulacka
+    -<img src={% static 'kalkulacka/calc.png'%}>

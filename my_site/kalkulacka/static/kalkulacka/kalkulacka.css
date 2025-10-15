@@ -1,0 +1,67 @@
+/* kalkulacka/kalkulacka.css */
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"], select {
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #27ae60;
+    font-size: 24px;
+}
+
+img {
+    margin-top: 30px;
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
+}
