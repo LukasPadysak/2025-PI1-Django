@@ -9,7 +9,7 @@ def index(request):
         b = int(request.POST["b"])
         
     
-
+    
         if a >b :
             vysledok = a 
         elif b >a :
